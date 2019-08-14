@@ -1,0 +1,435 @@
+html{
+    background-color: #f1f1f1;
+    font-family: Microsoft YaHei;
+}
+
+p{
+    margin: 0;
+}
+.max{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+
+    // padding-top: 1rem;
+}
+.weatherBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8.5rem;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    // border-radius: .5rem;
+    background-color: #fff;
+    width: 70%;
+    color: #fff;
+    & .weatherBoxOneDiv{
+        width: .8rem;
+        height: 8.5rem;
+        position: absolute;
+        left: -62px;
+        background-color: #fff;
+    }
+    & .weatherBoxTwoDiv{
+        width: .8rem;
+        height: 8.5rem;
+        position: absolute;
+        right: -62px;
+        background-color: #fff;
+    }
+}
+.main-index{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.mainBox{
+    width: 93%;
+    background-color: #fff;
+    // padding: .5rem;
+    position: relative;
+}
+.mainTit{
+    padding-left: .3rem;
+    font-size: 20px;
+    color: #6f6f6f;
+    margin: 1.5rem;
+    margin-bottom: 0;
+    margin-left: .8rem;
+    padding-bottom: 1.25rem;
+}
+.mainBtnBox{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+.mainRow{
+    display: flex;
+    justify-content: center;
+}
+.mainRow div{
+    width: 45%;
+    height: 8rem;
+    // margin: .4rem;
+}
+.mainBtn{
+    // border: 5px solid #fff;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.btnTit{
+    margin-top: .7rem;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    // width: 4.5rem;
+    color: #fff;
+    font-size: 16px;
+    height: 24px;
+    display: flex;
+    background-image: -webkit-linear-gradient(0deg, #9ccfff, #86b0ef);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 0px #c8daf8;
+    width: 4.2rem;
+}
+.loginMax{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-image: url("../../../static/images/door_BG.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.loginMaxHide{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-image: url("../../../static/images/door_BG.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.loginBox{
+    // height: 15rem;
+    background-color: #fff;
+    // border-radius: .2rem;
+    box-shadow: 0px 0px 5px #808080;
+    background-image: url("../../../static/images/boxTopCom.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    & .mint-button--small {
+        display: inline-block;
+        font-size: 14px;
+        padding: 0;
+        height: 33px;
+    }
+    & .goBtn{
+        background-image: url("../../../static/images/goBtn.png");
+        height: .5rem;
+        float: right;
+        width: 1rem;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        margin-left: .5rem;
+    }
+    & .select_bottom{
+        padding-left: 1.7rem;width: 60%;text-align: right;display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        & span{
+            color: #808080;
+        }
+    }
+}
+.loginTit{
+    text-align: center;
+    height: 2.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 1rem;
+    & span{
+        position: absolute;
+        right: 1.5rem;
+        font-size: 16px;
+        color: #518DEA;
+    }
+
+}
+.openDoorMax{
+    width: 100%;
+    // height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // position: absolute;
+    top: 0;
+    z-index: 2;
+    // background-color: rgba(200, 200, 200, 0.9);
+    // background-image: url("../../../static/images/door_BG.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.openDoorBox{
+    // background-color: #999;
+    width: 100%;
+    // border-radius: .3rem;
+    & .openDoorTopBg{
+        display: flex;
+        // position: absolute;
+        justify-content: flex-end;
+        height: 2.7rem;
+        background-image: url("../../../static/images/wave.png");
+        width: 100%;
+        background-size: 100%;
+    }
+}
+.openDoorMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 17rem;
+    overflow: scroll;
+    background-color: #fff;
+    // padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    & .item_openDoor{
+        width: 6rem;
+        height: 6rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        & .btn_openDoor{
+            width: 4rem;
+            height: 5rem;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+        & p{
+            text-align: center;
+            width: 5.5rem;
+            color: #fff;
+            font-size: 13px;
+            height: 24px;
+            display: flex;
+            background-image: -webkit-linear-gradient(0deg, #9ccfff, #86b0ef);
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 0px #c8daf8;
+        }
+    }
+}
+.mint-cell:last-child {
+    background-image: none;
+}
+.mint-cell-wrapper {
+    background-image: none !important;
+}
+.getCode{
+    width: 28%;
+    font-size: 13px;
+    background-image: -webkit-linear-gradient(0deg, rgb(114, 189, 255), rgb(81, 141, 234));
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align: center;
+    padding: .2rem;
+}
+.fieldBox {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2rem;
+    border-bottom: 1px solid rgba(114, 190, 255, 0.45);margin-top: 1rem;
+    font-size: 14px;
+    padding-left: .5rem;
+    padding-right:.5rem;
+    & input{
+        outline: none;width: 70%;border: 0;-webkit-box-flex: 1;line-height: 1.6;font-size: inherit;margin-right:0.8rem;
+    }
+}
+.mint-field .mint-cell-title {
+    width: 90px;
+}
+.loginCheck{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    & div{
+        width: 77%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;background-image: -webkit-linear-gradient(0deg,  #72BDFF,#518DEA);color: #fff;
+        font-size: 18px;margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    // margin-top: 1.2rem;
+}
+@media only screen and (max-width: 320px) {
+    .mint-field .mint-cell-title {
+        width: 70px!important;
+    }
+    .getCode{
+        width: 34%!important;
+    }
+}
+.pickerDiv{
+    text-align: center;
+    padding: .5rem;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.menuMax{
+    width: 16.5rem;
+    height: 33rem;
+}
+.item_menu{
+    background-color: rgb(248, 248, 248);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    margin-top: .2rem;
+    & span{
+        margin-left: 2.5rem;color: #818181;
+    }
+}
+.topBox{
+    background-image: url("../../../static/images/topBox_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;height: 10rem;
+    & .nickNameBox{
+        position: absolute;
+        left: 6.5rem;
+        bottom: 5.3rem;
+        color: #fff;
+    }
+    & .nowHouseBox{
+        font-size: 13px;position: absolute;
+        left: 6.5rem;
+        top: 5.3rem;
+        color: #999;width: 7.5rem;
+    }
+}
+.topBox_one{
+    width: 17%;
+    position: absolute;
+    bottom: 3.45rem;
+    left: 2.62rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.menuBtn{
+    position: absolute;
+    right: 0rem;
+    /* background-color: rgb(153, 153, 153); */
+    bottom: 2.3rem;
+    background-image: url("../../../static/images/btn_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 3.2rem;
+    height: 1.6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    bottom: 2rem;
+}
+.faceBtn{
+    background-image: url("../../../static/images/doorFaceBtn.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1.9rem;
+    width: 7rem;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+}
+.faceBtnBox{
+    // text-align: right;margin-bottom: 4rem;display: flex;justify-content: flex-end;
+    margin-top: 0.8rem;
+}
+
+.mainBottom{
+    display: flex;
+    display: none;
+    margin-top: 1rem;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    align-items: center;
+    color: #fff;
+    background-image: -webkit-linear-gradient(0deg, #9ccfff, #86b0ef);
+    // position: absolute;
+    bottom: 0;
+}
+.menuInfoBtn{
+    /* background-color: rgb(153, 153, 153); */
+    bottom: 2.3rem;
+    background-image: url("../../../static/images/btn_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 2.5rem;
+    height: 1.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;font-size: 12px;bottom: 3.3rem;
+    z-index: 1;
+    width: 20%;
+    position: absolute;
+    top: 40px;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    & span{
+        -moz-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;font-size: 16px;
+    }
+}
+
+.mint-swipe {
+    overflow: hidden;
+    position: relative;
+    // height: 35% ;
+    height: 10rem;
+  }
